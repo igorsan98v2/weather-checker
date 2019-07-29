@@ -1,11 +1,11 @@
 
-package com.ygs;
+package com.ygs.wheather_service;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Hourly {
+public class Daily {
 
     @SerializedName("summary")
     @Expose
@@ -15,7 +15,7 @@ public class Hourly {
     private String icon;
     @SerializedName("data")
     @Expose
-    private List<Datum> data = null;
+    private List<Datum_> data = null;
 
     public String getSummary() {
         return summary;
@@ -33,11 +33,11 @@ public class Hourly {
         this.icon = icon;
     }
 
-    public List<Datum> getData() {
+    public List<Datum_> getData() {
         return data;
     }
 
-    public void setData(List<Datum> data) {
+    public void setData(List<Datum_> data) {
         this.data = data;
     }
 

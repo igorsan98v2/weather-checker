@@ -3,18 +3,13 @@ package com.ygs;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import com.ygs.wheather_service.Weather;
 import okhttp3.OkHttpClient;
 
 import okhttp3.logging.HttpLoggingInterceptor;
-import retrofit2.Call;
-import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-import retrofit2.http.GET;
-import retrofit2.http.Path;
-import retrofit2.http.Query;
-import retrofit2.http.QueryMap;
 
 import java.io.IOException;
 import java.util.Map;
@@ -42,7 +37,7 @@ public class WeatherParser {
         weatherService = retrofit.create(WeatherService.class);
 
     }
-    public Weather getWeather(double lat,double lng,Map<String,String> queryParams){
+    public Weather getWeather(double lat, double lng, Map<String,String> queryParams){
         Weather weather=null;
         try {
             Response<Weather> response = weatherService.getWeather(API_KEY,lat,lng,queryParams).execute();
