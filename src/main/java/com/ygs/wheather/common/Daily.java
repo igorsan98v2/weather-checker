@@ -1,5 +1,5 @@
 
-package com.ygs.wheather_service;
+package com.ygs.wheather.common;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;

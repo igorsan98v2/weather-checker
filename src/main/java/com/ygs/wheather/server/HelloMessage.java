@@ -1,4 +1,4 @@
-package com.ygs;
+package com.ygs.wheather.server;
 
 public class HelloMessage {
     private String name;

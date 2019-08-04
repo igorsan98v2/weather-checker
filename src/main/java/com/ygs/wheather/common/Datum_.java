@@ -1,5 +1,5 @@
 
-package com.ygs.wheather_service;
+package com.ygs.wheather.common;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
