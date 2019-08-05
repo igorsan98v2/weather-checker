@@ -9,6 +9,7 @@ import java.util.Map;
 public class UserData {
     //private int id;
     private String ip;
+
     private Weather  wheather;
     private Location location;
     public  UserData(String ip){
@@ -44,6 +45,7 @@ public class UserData {
     public Location getLocation() {
         return location;
     }
+
     /*
     public Location getLocation() {
         return location;

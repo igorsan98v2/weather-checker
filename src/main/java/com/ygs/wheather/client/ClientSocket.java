@@ -1,7 +1,9 @@
 package com.ygs.wheather.client;
 
+import com.ygs.wheather.common.IP;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.messaging.converter.MappingJackson2MessageConverter;
 import org.springframework.messaging.converter.StringMessageConverter;
 import org.springframework.messaging.simp.stomp.StompSession;
 import org.springframework.web.socket.client.standard.StandardWebSocketClient;
@@ -35,28 +37,9 @@ public class ClientSocket {
     private static StompSession stompSession2;
 
     public static void main(String[] args) {
-        try {
-            Enumeration<NetworkInterface> net = NetworkInterface.getNetworkInterfaces();
-            while (net.hasMoreElements()) {
-                NetworkInterface networkInterface = net.nextElement();
-                Enumeration<InetAddress> add = networkInterface.getInetAddresses();
-                while (add.hasMoreElements()) {
-                    InetAddress a = add.nextElement();
-                    if (!a.isLoopbackAddress()
-                            && !a.getHostAddress().contains(":")) {
-
-                            System.out.println( "getIPV4 : " + a.getHostAddress());
-
-                       // return a.getHostAddress();
-                    }
-                }
-            }
-
-        }
-
-        catch (SocketException e){
-            e.printStackTrace();
-        }
+        IP_Parser ipParser = new IP_Parser();
+        IP ip = ipParser.getIP();
+        //System.out.println(ip.getIP().getIP());
         try {
 
             setUp();
@@ -73,7 +56,7 @@ public class ClientSocket {
                         userQueue1.offer(payload.toString());
                     }));
             Thread.currentThread().sleep(100);
-
+            /*
             log.info("### client2 subscribes");
             BlockingQueue<String> queue2 = new LinkedBlockingDeque<>();
             BlockingQueue<String> userQueue2 = new LinkedBlockingDeque<>();
@@ -89,17 +72,17 @@ public class ClientSocket {
                     }));
 
             Thread.currentThread().sleep(100);
-
+            */
             log.info("### client1 registers");
-            stompSession1.send(ENDPOINT_REGISTER, "hello guys");
+            stompSession1.send(ENDPOINT_REGISTER, ip);
             Thread.currentThread().sleep(100);
             System.out.println(userQueue1.poll());
             System.out.println(queue1.poll());
-            System.out.println(queue2.poll());
+            //System.out.println(queue2.poll());
             Thread.currentThread().sleep(5000);
             System.out.println("info about usernames:"+userQueue1.poll());
             System.out.println(queue1.poll());
-            System.out.println(queue2.poll());
+          //  System.out.println(queue2.poll());
 
 
             // Assert.assertEquals("Thanks for your registration!", userQueue1.poll());
@@ -109,7 +92,7 @@ public class ClientSocket {
             Thread.currentThread().sleep(100);
 
             log.info("### client2 registers");
-            stompSession2.send(ENDPOINT_REGISTER, "yo!");
+            //stompSession2.send(ENDPOINT_REGISTER, ip);
             Thread.currentThread().sleep(100);
           //  Assert.assertEquals("Thanks for your registration!", userQueue2.poll());
            // Assert.assertEquals("Someone just registered saying: yo!", queue1.poll());
@@ -129,7 +112,8 @@ public class ClientSocket {
     }
     public static WebSocketStompClient   createWebSocketClient(){
         WebSocketStompClient client= new WebSocketStompClient(new StandardWebSocketClient());
-        client.setMessageConverter(new StringMessageConverter());
+        client.setMessageConverter(new MappingJackson2MessageConverter());
+        //new StringMessageConverter();
         return client;
     }
     public static void setUp() throws Exception {

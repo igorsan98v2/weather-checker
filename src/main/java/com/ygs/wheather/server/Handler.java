@@ -23,7 +23,7 @@ public class Handler  extends DefaultHandshakeHandler {
             name = (String)attributes.get(ATTR_PRINCIPAL);
         }
 
-        WeatherInformer.userData.put(name,new UserData(request.getRemoteAddress().toString()));
+      //  WeatherInformer.userData.put(name,new UserData(request.getRemoteAddress().toString()));
         return new Principal() {
             @Override
             public String getName()
