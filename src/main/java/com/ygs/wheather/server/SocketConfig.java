@@ -2,6 +2,7 @@ package com.ygs.wheather.server;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.event.EventListener;
 import org.springframework.http.server.ServerHttpRequest;
@@ -16,6 +17,7 @@ import org.springframework.web.socket.messaging.SessionConnectEvent;
 import org.springframework.web.socket.messaging.SessionDisconnectEvent;
 import org.springframework.web.socket.messaging.SessionSubscribeEvent;
 import org.springframework.web.socket.server.RequestUpgradeStrategy;
+import org.springframework.web.socket.server.standard.ServletServerContainerFactoryBean;
 import org.springframework.web.socket.server.standard.TomcatRequestUpgradeStrategy;
 import org.springframework.web.socket.server.support.DefaultHandshakeHandler;
 
@@ -32,12 +34,13 @@ public class SocketConfig implements WebSocketMessageBrokerConfigurer {
     public static final String SUBSCRIBE_USER_PREFIX = "/private";
     public static final String SUBSCRIBE_USER_REPLY = "/reply";
     public static final String SUBSCRIBE_QUEUE = "/queue";
+    public static final String PING_REPLY = SUBSCRIBE_USER_REPLY+"/ping";
     private static Logger log = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
     @Override
     public void configureMessageBroker(MessageBrokerRegistry config) {
 
         config.enableSimpleBroker("/topic","/user","/queue");
-        config.enableSimpleBroker(SUBSCRIBE_QUEUE, SUBSCRIBE_USER_REPLY,"/topic");
+        config.enableSimpleBroker(SUBSCRIBE_QUEUE, SUBSCRIBE_USER_REPLY,PING_REPLY,"/topic");
         config.setUserDestinationPrefix(SUBSCRIBE_USER_PREFIX);
         //config.setApplicationDestinationPrefixes("/app");
     }
@@ -86,5 +89,13 @@ public class SocketConfig implements WebSocketMessageBrokerConfigurer {
     @EventListener
     public void handleDisconnectEvent(SessionDisconnectEvent event) {
         log.info("<=== handleDisconnectEvent: username="+event.getUser().getName()+", event="+event);
+    }
+    @Bean
+    public ServletServerContainerFactoryBean createServletServerContainerFactoryBean() {
+        ServletServerContainerFactoryBean container = new ServletServerContainerFactoryBean();
+        container.setMaxTextMessageBufferSize(32768);
+        container.setMaxBinaryMessageBufferSize(32768);
+        log.info("Websocket factory returned");
+        return container;
     }
 }

@@ -43,20 +43,16 @@ public class WeatherInformer {
     }
 
     // this will send a message to an endpoint on which a client can subscribe
-    @Scheduled(fixedRate = 10000)
+    @Scheduled(fixedRate = 1000*60)
     public void trigger() {
 
         userData.forEach((username,data)->{
-            System.out.println("I m trying to send some");
 
-            //  Location location = data.getLocation();
-            //data.setWheather(WeatherParser.getWeather(location.getLat(),location.getLon()));
-            System.out.println("username: " + username + " data : " + data.getIp());
+
             Respond respond = new Respond(username,data.getWheather());
             template.convertAndSendToUser(username, SocketConfig.SUBSCRIBE_USER_REPLY,respond);
         });
-        //this.template.convertAndSendToUser("","",helloMassage);
-        //this.template.convertAndSend("/topic/greetings", helloMassage);
+
 
     }
 

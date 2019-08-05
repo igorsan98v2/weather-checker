@@ -84,4 +84,8 @@ public class Weather {
         this.offset = offset;
     }
 
+    @Override
+    public String toString() {
+        return "Weather is weather its all";
+    }
 }

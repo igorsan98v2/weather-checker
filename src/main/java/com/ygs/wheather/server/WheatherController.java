@@ -1,9 +1,6 @@
 package com.ygs.wheather.server;
 import com.google.gson.Gson;
-import com.ygs.wheather.common.IP;
-import com.ygs.wheather.common.Request;
-import com.ygs.wheather.common.Respond;
-import com.ygs.wheather.common.Weather;
+import com.ygs.wheather.common.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +17,7 @@ import org.springframework.web.util.HtmlUtils;
 import java.lang.invoke.MethodHandles;
 import java.security.Principal;
 
-import static com.ygs.wheather.server.SocketConfig.SUBSCRIBE_USER_PREFIX;
-import static com.ygs.wheather.server.SocketConfig.SUBSCRIBE_USER_REPLY;
+import static com.ygs.wheather.server.SocketConfig.*;
 import static java.lang.Thread.sleep;
 
 @Controller
@@ -48,51 +44,43 @@ public class WheatherController {
         return new Greeting("Hello, " + HtmlUtils.htmlEscape(message.getName()) + "!");
     }
 */
-    @MessageMapping(SUBSCRIBE_USER_PREFIX +SUBSCRIBE_USER_REPLY)
-    @SendToUser("SUBSCRIBE_USER_REPLY")
-    public Weather getWeather(Message<Object>message,@Payload String payload,Principal principal) throws  Exception{
-        log.info(principal.getName());
-        return null;
-    }
+    @MessageMapping("/topic/weather")
+    public void getWeather(Message<Object>message,@Payload Request payload,Principal principal) throws  Exception{
 
+        if(payload!=null) {
+            String username = payload.getUsername();
+            Respond respond = new Respond(username, WeatherInformer.userData.get(username).getWheather());
+            log.info("Try to send some to username " + username + "wheather info" + respond.getWeather().getDaily().getData().get(0).getTemperatureHigh());
+            messagingTemplate.convertAndSendToUser(username, SocketConfig.SUBSCRIBE_USER_REPLY, respond);
+        }
+    }
+    @MessageMapping("/topic/ping")
+    public void getPong(Message<Object>message, @Payload PingPong ping, Principal principal) throws Exception{
+            if(ping!=null){
+                ping.setPong();
+                String username = ping.getUsername();
+                log.info("ping from user "+username+" to server"+ping.calcDelay());
+                messagingTemplate.convertAndSendToUser(username,PING_REPLY,ping);
+            }
+    }
     @MessageMapping(ENDPOINT_REGISTER)
     public void register(Message<Object> message, @Payload IP  payload, Principal principal) throws Exception {
         String username = principal.getName();
-        //IP ip = (IP)message;
+
        // log.info(ip.getIP());
         if(!WeatherInformer.userData.containsKey(username)) {
             WeatherInformer.userData.put(username, new UserData(payload.getIP()));
         }
         log.info("new registration: username="+username+", payload="+payload);
-        IP pak = new IP("Fuck I got it");
+
         log.info("send to user");
-        Respond respond= new Respond(username,null);
+        Weather weather= WeatherParser.getWeather(48.4322,37.3322);
+        Respond respond= new Respond(username,weather);
         messagingTemplate.convertAndSendToUser(username, SocketConfig.SUBSCRIBE_USER_REPLY, respond);
-        //pak.setIP(payload.toString());
-       //  messagingTemplate.convertAndSend(SocketConfig.SUBSCRIBE_QUEUE,pak);
 
-        //messagingTemplate.convertAndSendToUser(username, SocketConfig.SUBSCRIBE_USER_REPLY, "Thanks for your registration!");
-        //messagingTemplate.convertAndSend(SocketConfig.SUBSCRIBE_QUEUE, "Someone just registered saying: "+payload);
-        /*new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
+        messagingTemplate.convertAndSend(SocketConfig.SUBSCRIBE_QUEUE,respond);
 
 
-                while (true){
-
-                    messagingTemplate.convertAndSendToUser(username, SocketConfig.SUBSCRIBE_USER_REPLY, "Thanks for your registration!"+username);
-                    log.info("resended to username:"+username);
-                    Thread.currentThread().sleep(5000);
-                }
-                }
-                catch (InterruptedException e){
-                    e.printStackTrace();
-                }
-            }
-        }).start();
-
-         */
     }
 
 

@@ -7,7 +7,8 @@ public class Respond {
         return username;
     }
 
-    public void setUsername(String username) {
+    public void setUsername(
+            String username) {
         this.username = username;
     }
     public Weather getWeather(){
@@ -19,7 +20,17 @@ public class Respond {
 
     @Override
     public String toString() {
-        return "it is data of "+username;
+        double temp = weather.getHourly().getData().get(0).getTemperature();
+        double pressure = weather.getHourly().getData().get(0).getPressure();
+        double windSpeed = weather.getHourly().getData().get(0).getWindSpeed();
+        String total = weather.getHourly().getSummary();
+        String res = String.format("\nWeather params:"+
+                "\nSummary weat1her look like this: %s"+
+                "\ntemperature is %.2f C" +
+                "\npressure is %.2f hPa"+
+                "\nwind speed is %.2f m/s\n",
+                total,temp,pressure,windSpeed);
+        return res;
     }
     public  Respond(){
 

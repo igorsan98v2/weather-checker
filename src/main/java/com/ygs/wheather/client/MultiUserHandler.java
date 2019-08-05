@@ -14,8 +14,16 @@ public class MultiUserHandler extends StompSessionHandlerAdapter {
 
     @Override
     public void afterConnected(StompSession session, StompHeaders connectedHeaders) {
-        String username = connectedHeaders.get("user-name").iterator().next();
-        log.info("afterConnected: username="+username);
+        try {
+            String username = connectedHeaders.get("user-name").iterator().next();
+            if(username!=null){
+                log.info("afterConnected: username="+username);
+            }
+        }
+        catch (NullPointerException e){
+            log.warn(e.getMessage());
+        }
+
         super.afterConnected(session, connectedHeaders);
     }
 

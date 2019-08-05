@@ -62,7 +62,7 @@ public class WeatherParser {
         try {
             Response<Weather> response = weatherService.getWeather(API_KEY,lat,lng,queryParams).execute();
             weather=response.body();
-            response.message();
+           // response.message();
             // System.out.println(response.body().getTimezone());
         }
         catch (IOException e){
