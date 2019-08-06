@@ -31,7 +31,7 @@ Client & server:
 </ul>
 Client:
 <ul>
- <li><code>--ip -i</code> This closeful to magic arg can change your ip for server.
+ <li><code>--ip -i</code> This closeful to magic arg could change your ip for server.
   Just write it and server will think that your from another city,region and etc. </li>
   <li><code>--server -s</code> You may change server adress, if you need it. Do you need it ?</li>
 </ul>
