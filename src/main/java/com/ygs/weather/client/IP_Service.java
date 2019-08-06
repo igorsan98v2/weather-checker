@@ -1,6 +1,6 @@
 package com.ygs.weather.client;
 
-import com.ygs.weather.server.common.IP;
+import com.ygs.weather.server.IP;
 import retrofit2.Call;
 import retrofit2.http.GET;
 

@@ -1,8 +1,5 @@
 package com.ygs.weather.server;
 
-import com.ygs.weather.server.common.Location;
-import com.ygs.weather.server.common.Respond;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.scheduling.annotation.Scheduled;

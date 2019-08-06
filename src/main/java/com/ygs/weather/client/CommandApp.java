@@ -1,8 +1,8 @@
 package com.ygs.weather.client;
 
-import com.ygs.weather.server.common.IP;
-import com.ygs.weather.server.common.PingPong;
-import com.ygs.weather.server.common.Request;
+import com.ygs.weather.server.IP;
+import com.ygs.weather.server.PingPong;
+import com.ygs.weather.server.Request;
 import org.apache.commons.cli.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -150,6 +150,7 @@ public class CommandApp {
 
                         Request request = new Request(username);
                         stompSession.send("/topic/weather", request);
+                        Thread.sleep(300);//just need to have nice output
                         break;
                     case "2":
 

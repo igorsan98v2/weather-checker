@@ -36,7 +36,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <executions>
-                    <!--execution>
+                    <execution>
                         <id>spring-server</id>
                         <goals>
                             <goal>repackage</goal>
@@ -48,7 +48,7 @@
                             </mainClass>
                             <finalName>spring-server</finalName>
                         </configuration>
-                    </execution-->
+                    </execution>
                     <execution>
                         <id>spring-client</id>
                         <goals>

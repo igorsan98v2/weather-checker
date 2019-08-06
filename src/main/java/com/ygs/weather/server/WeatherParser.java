@@ -3,7 +3,6 @@ package com.ygs.weather.server;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import com.ygs.weather.server.common.Weather;
 import okhttp3.OkHttpClient;
 
 

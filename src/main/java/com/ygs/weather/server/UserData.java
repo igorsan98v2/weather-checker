@@ -1,8 +1,5 @@
 package com.ygs.weather.server;
 
-import com.ygs.weather.server.common.Location;
-import com.ygs.weather.server.common.Weather;
-
 
 public class UserData {
 

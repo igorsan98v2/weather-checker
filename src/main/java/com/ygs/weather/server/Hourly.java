@@ -1,5 +1,5 @@
 
-package com.ygs.weather.server.common;
+package com.ygs.weather.server;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;

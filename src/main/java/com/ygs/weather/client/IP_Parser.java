@@ -2,7 +2,7 @@ package com.ygs.weather.client;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.ygs.weather.server.common.IP;
+import com.ygs.weather.server.IP;
 import okhttp3.OkHttpClient;
 import retrofit2.Response;
 import retrofit2.Retrofit;

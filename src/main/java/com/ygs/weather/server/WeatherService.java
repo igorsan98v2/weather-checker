@@ -1,6 +1,5 @@
 package com.ygs.weather.server;
 
-import com.ygs.weather.server.common.Weather;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;

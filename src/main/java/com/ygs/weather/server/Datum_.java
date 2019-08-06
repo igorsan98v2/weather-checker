@@ -1,5 +1,5 @@
 
-package com.ygs.weather.server.common;
+package com.ygs.weather.server;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

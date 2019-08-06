@@ -1,6 +1,6 @@
 package com.ygs.weather.client;
 
-import com.ygs.weather.server.common.StopMessage;
+import com.ygs.weather.server.StopMessage;
 import org.springframework.messaging.simp.stomp.StompFrameHandler;
 import org.springframework.messaging.simp.stomp.StompHeaders;
 

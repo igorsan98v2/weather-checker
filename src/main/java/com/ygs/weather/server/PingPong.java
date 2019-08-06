@@ -1,4 +1,4 @@
-package com.ygs.weather.server.common;
+package com.ygs.weather.server;
 
 public class PingPong {
     private long ping;
