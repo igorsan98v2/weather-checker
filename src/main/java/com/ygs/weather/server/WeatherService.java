@@ -1,0 +1,19 @@
+package com.ygs.weather.server;
+
+import com.ygs.weather.server.common.Weather;
+import retrofit2.Call;
+import retrofit2.http.GET;
+import retrofit2.http.Path;
+import retrofit2.http.QueryMap;
+
+import java.util.Map;
+
+
+public interface WeatherService {
+
+        @GET("{API_KEY}/{lat},{long}")
+        Call<Weather> getWeather(@Path("API_KEY") String api,
+                                 @Path("lat") double lat,
+                                 @Path("long") double longt,
+                                 @QueryMap Map<String,String> queryParams);
+}

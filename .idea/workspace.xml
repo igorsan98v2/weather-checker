@@ -1,24 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5a45365-f39c-44c2-ba1f-3d868dc69f9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/PingPongFrameHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/PingPongHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/PingPong.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/ClientTest.java" afterDir="false" />
+    <list default="true" id="d5a45365-f39c-44c2-ba1f-3d868dc69f9f" name="Default Changelist" comment="added server time and choose">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/client/StopMessageHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/StopMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/CommandApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/CommandApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/FrameHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/FrameHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/MultiUserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/MultiUserHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Respond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Respond.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/SocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/SocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WeatherInformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WeatherInformer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WeatherParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WeatherParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WheatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WheatherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/ClientSocket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/CommandApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/client/CommandApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/FrameHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/client/FrameHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/IP_Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/client/IP_Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/IP_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/client/IP_Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/MultiUserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/client/MultiUserHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/PingPongFrameHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/client/PingPongFrameHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/PingPongHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Daily.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Daily.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Datum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Datum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Datum_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Datum_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Flags.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Flags.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Hourly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Hourly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/IP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/IP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/PingPong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/PingPong.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Respond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Respond.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/LocationParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/LocationParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/LocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/LocationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/SocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/SocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WeatherInformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WeatherInformer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WeatherParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WeatherParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WeatherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WheatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WheatherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/ClientTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,23 +58,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WeatherInformer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WeatherInformer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="111">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/client/CommandApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2651">
+              <caret line="245" column="12" selection-start-line="245" selection-start-column="12" selection-end-line="245" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#788#804#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/CommandApp.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="138" column="67" selection-start-line="138" selection-start-column="67" selection-end-line="138" selection-end-column="67" />
+            <state relative-caret-position="315">
+              <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-cli/inputFiles.lst">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,10 +105,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WheatherController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="238">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,95 +117,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/MultiUserHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WeatherParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="-662">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/PingPongHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WeatherService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            <state relative-caret-position="180">
+              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/IP_Service.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/client/IP_Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/SocketConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <caret line="108" column="94" selection-start-line="108" selection-start-column="94" selection-end-line="108" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/IP_Parser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WheatherController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/PingPong.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-              <folding>
-                <element signature="e#170#171#0" expanded="true" />
-                <element signature="e#196#197#0" expanded="true" />
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#257#258#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-                <element signature="e#354#355#0" expanded="true" />
-                <element signature="e#541#542#0" expanded="true" />
-                <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#667#668#0" expanded="true" />
-                <element signature="e#723#724#0" expanded="true" />
-                <element signature="e#760#761#0" expanded="true" />
-                <element signature="e#800#801#0" expanded="true" />
-                <element signature="e#835#836#0" expanded="true" />
-                <element signature="e#866#867#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/PingPongFrameHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#804#805#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -189,14 +176,24 @@
       <find>Websocket factory returned</find>
       <find>send</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/main/java/com/ygs/wheather</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Igor Yutsyk &lt;igorsan98@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/WeatherParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/Weather.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ygs/WeatherParser.java" />
@@ -217,31 +214,37 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/server.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/GritingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/LocationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/LocationParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Location.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/SpringApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/IP_Parser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/IP_Service.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/IP.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/Handler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/UserData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/ClientSocket.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Weather.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WeatherParser.java" />
         <option value="$PROJECT_DIR$/test/ClientTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/ClientTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/FrameHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Request.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WeatherInformer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Respond.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/SocketConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/PingPong.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/PingPongHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/StopMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/MultiUserHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/Handler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/ClientSocket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/StopMessageHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/PingPongFrameHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/FrameHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Respond.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WeatherParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WeatherInformer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WheatherController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/LocationParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/UserData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/IP_Parser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/CommandApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/SocketConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WheatherController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WeatherInformer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WeatherParser.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -249,6 +252,7 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -263,6 +267,16 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="weather_server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="weather_server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="weather_server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
       <select />
@@ -311,7 +325,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wheather" type="462c0819:PsiDirectoryNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="weather-checker" type="b2602c69:ProjectViewProjectNode" />
@@ -319,37 +333,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wheather" type="462c0819:PsiDirectoryNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weather-checker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weather-checker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wheather" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weather-checker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weather-checker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wheather" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weather-checker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weather-checker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weather-checker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weather-checker" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -369,7 +354,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -392,13 +377,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.CommandApp">
     <configuration name="CommandApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ygs.wheather.client.CommandApp" />
+      <option name="MAIN_CLASS_NAME" value="com.ygs.weather.client.CommandApp" />
       <module name="weather_server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ygs.wheather.client.*" />
+          <option name="PATTERN" value="com.ygs.weather.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -406,12 +391,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ygs.wheather.server.Main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ygs.weather.server.Main" />
       <module name="weather_server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ygs.wheather.server.*" />
+          <option name="PATTERN" value="com.ygs.weather.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -438,15 +423,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.ygs.wheather in weather_server" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.ygs.weather in weather_server" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="weather_server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ygs.wheather.*" />
+          <option name="PATTERN" value="com.ygs.weather.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ygs.wheather" />
+      <option name="PACKAGE_NAME" value="com.ygs.weather" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -454,11 +439,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.CommandApp" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="JUnit.ClientTest" />
         <item itemvalue="JUnit.ClientTest.stompTest" />
-        <item itemvalue="JUnit.com.ygs.wheather in weather_server" />
+        <item itemvalue="JUnit.com.ygs.weather in weather_server" />
       </list>
     </recent_temporary>
   </component>
@@ -487,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564963707124</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added ping command, added weather command, edited message size">
+      <created>1565021406671</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565021406671</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -527,9 +519,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="725" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.33712122" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.34772727" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.080937974" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -542,23 +533,23 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47554806" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3288364" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3288364" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3288364" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32715008" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50102043" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32715008" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.18560606" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.18560606" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.21818182" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.33712122" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.34772727" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.080937974" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -566,12 +557,12 @@
       <window_info id="Image Layers" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3288364" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32715008" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989796" visible="true" weight="0.4148398" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47554806" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3288364" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3288364" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50102043" side_tool="true" />
@@ -590,89 +581,58 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added client to same project, added geolocation feature" />
     <MESSAGE value="added client interface features, added Respond with weather" />
-    <option name="LAST_COMMIT_MESSAGE" value="added client interface features, added Respond with weather" />
+    <MESSAGE value="added ping command, added weather command, edited message size" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ping command, added weather command, edited message size" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/CommandApp.java</url>
-          <line>36</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/weather/client/CommandApp.java</url>
+          <line>37</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/CommandApp.java</url>
-          <line>233</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/weather/client/CommandApp.java</url>
+          <line>248</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/CommandApp.java</url>
-          <line>234</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/weather/client/CommandApp.java</url>
+          <line>249</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/CommandApp.java</url>
-          <line>133</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/ClientTest.java</url>
-          <line>44</line>
-          <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WheatherController.java</url>
-          <line>49</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WheatherController.java</url>
+          <line>38</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WheatherController.java</url>
-          <line>58</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WheatherController.java</url>
+          <line>48</line>
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WheatherController.java</url>
-          <line>59</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WheatherController.java</url>
+          <line>49</line>
           <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WheatherController.java</url>
-          <line>62</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WheatherController.java</url>
+          <line>52</line>
           <properties />
           <option name="timeStamp" value="38" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/CommandApp.java</url>
-          <line>137</line>
-          <properties />
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/CommandApp.java</url>
-          <line>92</line>
-          <properties />
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/ClientSocket.java</url>
-          <line>118</line>
-          <properties class="com.ygs.wheather.client.ClientSocket" method="setUp">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WheatherController.java</url>
-          <line>47</line>
-          <properties class="com.ygs.wheather.server.WheatherController" method="getWeather">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WheatherController.java</url>
+          <line>36</line>
+          <properties class="com.ygs.weather.server.WheatherController">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="30" />
@@ -711,14 +671,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Weather.java" />
     <entry file="file://$USER_HOME$/.m2/settings.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Datum_.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Datum_.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Flags.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Flags.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -748,7 +708,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/server.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Hourly.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Hourly.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -756,7 +716,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/SpringApp.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/LocationService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/LocationService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="54" lean-forward="true" selection-start-line="10" selection-end-line="12" selection-end-column="54" />
@@ -766,14 +726,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Datum.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Datum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Daily.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Daily.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -785,86 +745,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/Greeting.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/HelloMessage.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/IP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Location.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Location.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/LocationParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-318">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Weather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#1712#1713#0" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/ClientSocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="122" column="35" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="108" column="32" selection-start-line="108" selection-start-column="32" selection-end-line="108" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/ClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="137" column="33" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3173#3174#0" expanded="true" />
-            <element signature="e#3216#3217#0" expanded="true" />
-            <element signature="e#3245#3275#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Request.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Request.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
@@ -879,85 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/UserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WeatherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WeatherParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/Respond.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="37" column="52" lean-forward="true" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/FrameHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/SocketConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="41" column="61" lean-forward="true" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/common/PingPong.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/function/Consumer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -965,92 +774,251 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WeatherInformer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/PingPong.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="180">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#788#804#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/WheatherController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/ClientSocket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/MultiUserHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/server/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="141">
+          <caret line="97" column="24" selection-start-line="96" selection-start-column="8" selection-end-line="97" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/IP_Service.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/client/IP_Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/client/MultiUserHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/client/FrameHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Respond.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#1558#1559#0" expanded="true" />
+            <element signature="e#1590#1591#0" expanded="true" />
+            <element signature="e#1624#1625#0" expanded="true" />
+            <element signature="e#1651#1652#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/StopMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/Weather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-630">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#1712#1713#0" expanded="true" />
+            <element signature="e#1763#1764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/ClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1342">
+          <caret line="137" column="33" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/common/IP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/LocationParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/IP_Parser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/UserData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        <state relative-caret-position="60">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/PingPongHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/client/PingPongFrameHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/PingPongFrameHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        <state relative-caret-position="96">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/wheather/client/CommandApp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="138" column="67" selection-start-line="138" selection-start-column="67" selection-end-line="138" selection-end-column="67" />
+        <state relative-caret-position="87">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/client/StopMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/client/IP_Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/SocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="108" column="94" selection-start-line="108" selection-start-column="94" selection-end-line="108" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-cli/inputFiles.lst">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/client/CommandApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2651">
+          <caret line="245" column="12" selection-start-line="245" selection-start-column="12" selection-end-line="245" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WheatherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WeatherInformer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WeatherParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-662">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ygs/weather/server/WeatherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1130,5 +1098,8 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="" />
   </component>
 </project>
