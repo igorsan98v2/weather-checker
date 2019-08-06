@@ -35,7 +35,8 @@ Client:
   Just write it and server will think that your from another city,region and etc. </li>
   <li><code>--server -s</code> You may change server adress, if you need it. Do you need it ?</li>
 </ul>
-It`s enough for life hacks, time to one tip,use this ip for change you location, if you need to test multiple connection to server :
+It`s enough for life hacks, time to one tip,use this ip for change you location, if you need to test multiple connection to 
+server with different anserws:
 <ul>
   <li>31.43.110.0-31.43.110.255  Kiyv region</li>
   <li>31.131.32.0-31.131.39.255  Lviv region</li>
