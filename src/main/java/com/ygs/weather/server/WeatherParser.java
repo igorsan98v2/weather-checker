@@ -51,7 +51,7 @@ public class WeatherParser {
     public  static Weather getWeather(double lat, double lng){
         Map<String,String> queryParams = new HashMap<String, String>();
         queryParams.put("exclude","currently");
-        queryParams.put("lang","ru");
+        queryParams.put("lang","en");
         queryParams.put("units","si");
 
         Weather weather=null;

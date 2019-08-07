@@ -20,13 +20,7 @@ public class WeatherInformer {
     @Scheduled(fixedRate = 1000*60*60)
     public void updateWheatherInfo(){
 
-        Map<String,String> queryParams = new HashMap<String, String>();
-        queryParams.put("exclude","currently");
-        queryParams.put("lang","ru");
-        queryParams.put("units","si");
-
-
-
+     
         userData.forEach((username,data)->{
             Location location = data.getLocation();
             data.setWheather(WeatherParser.getWeather(location.getLat(),location.getLon()));
