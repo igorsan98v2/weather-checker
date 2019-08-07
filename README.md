@@ -16,8 +16,8 @@ and also by auto-notification every 60 seconds.
   <li>change directory to ./weather-checker</li>
   <li>run install by <code>mvn install</code> </li>
   <li>change directory to ./target</li>
-  <li>run server by command <code>java -jar spring-server-spring-boot.jar</code> 
-      or run client by command <code>java -jar spring-client.jar </code>
+  <li>run server by command: <code>java -jar weather_server-1.0-SNAPSHOT.jar</code> 
+      or run client by command: <code>java -jar spring-client.jar </code>
   </li>
 </ol>
 <hr></hr>
